@@ -3,9 +3,14 @@ tf<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+     <!--<script src="js/bootstrap.bundle.min.js"></script>-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <title>Document</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/bootstrap.bundle.min.js"></script>
+  
 </head>
      <style>
          .top
@@ -50,19 +55,22 @@ tf<!DOCTYPE html>
          {
            height: 300px;
            width: 450px;
-           margin-left: 55px;
+           margin-left: 10px;
+           margin-right: 10px;
         }
         .leftsimg
         {
-            height: 600px;
+            height: 300px;
            width: 450px;
-           margin-left: 55px;   
+           margin-left: 10px;
+           margin-right: 10px; 
         }
         .lefttimg
         {
-            height: 350px;
+            height: 300px;
            width: 450px;
-           margin-left: 55px;   
+           margin-left: 10px;
+           margin-right: 10px; 
         }
          .centerstext
          {
@@ -77,18 +85,24 @@ tf<!DOCTYPE html>
          }
          .centerfimg
          {
-            height: 550px;
-           width: 400px;           
+            height: 300px;
+           width: 450px;
+           margin-left: 10px;
+           margin-right: 10px;        
          }
          .centersimg
          {
-            height: 350px;
-           width: 400px;           
+            height: 300px;
+           width: 450px;
+           margin-left: 10px;
+           margin-right: 10px;       
          }
          .centertimg
          {
-            height: 350px;
-           width: 400px;           
+            height: 300px;
+           width: 450px;
+           margin-left: 10px;
+           margin-right: 10px;           
          }
          .rightbtext
          {
@@ -101,8 +115,10 @@ tf<!DOCTYPE html>
          }
          .rightfimg
          {
-             height: 150px;
-             width: 250px;
+            height: 300px;
+           width: 450px;
+           margin-left: 10px;
+           margin-right: 10px;
          }
          .butn
          {
@@ -127,17 +143,62 @@ tf<!DOCTYPE html>
              background-color: rgb(168, 165, 161);
              border: solid rgb(168, 165, 161);
              color: white;
+             border-radius: 8%;
          }
-         .bimg
+         .bfimg
          {
-             width: 160px;
+             width: 150px;
              height: 100px;
             
          }
-         .dimg
+         .bsimg
          {
-           margin-left: 5px;
-           margin-right: 3px;
+             width: 152px;
+             height: 100px;
+            
+         }
+         .btimg
+         {
+             width: 150px;
+             height: 100px;
+            
+         }
+         .lbtn
+         {
+             background-color: rgb(85, 247, 239);
+             color: rgb(14, 16, 14);
+             margin-left: 200px;
+             border: solid  rgb(85, 247, 239) ;
+             border-radius: 10%;
+             box-shadow:  0 0 10px 0 rgba(0, 0, 0, 0.904);
+         }
+         .cbtn
+         {
+             background-color: rgb(248, 164, 230);
+             color: rgb(37, 9, 112);
+             margin-left: 150px;
+             border: solid  rgb(248, 164, 230) ;
+             border-radius: 10%;
+             box-shadow:  0 0 10px 0 rgba(0, 0, 0, 0.904);
+         }
+         .rbtn
+         {
+             background-color: rgb(248, 189, 62);
+             color: rgb(247, 4, 154);
+             margin-left: 90px;
+             border: solid  rgb(248, 189, 62) ;
+             border-radius: 10%;
+             box-shadow:  0 0 10px 0 rgba(0, 0, 0, 0.904);
+         }
+         .lastbtn
+         {
+             background-color: rgb(28, 143, 24);
+             color: rgb(250, 219, 46);
+             border: solid  rgb(20, 129, 20) ;
+             border-radius: 5%;
+             box-shadow:  0 0 30px 0 rgba(45, 15, 220, 0.904);
+             margin-left: 40%;
+             margin-right: 40%;
          }
 
          
@@ -165,7 +226,19 @@ tf<!DOCTYPE html>
                  1 year ago in journey
                  <br><span class="leftbtext"> <b>How can we sing about love?</b></span>
             </span>
-             <br><br><img src="images/legsonheight.png" class="leftfimg">
+             <br><br><button class="lbtn" data-toggle="modal" data-target="#firstimage">VIEW IMAGE</button>
+             <div class="modal fade" id="firstimage"role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <img src="images/legsonheight.png" class="leftfimg">
+                        </div>
+                    </div>
+                </div>
+             </div><br>
+
+
+
              <br><span class="leftstext">Etiam rhoncus. Maecenas tempus, tellus tellus eget</span>
              <span class="leftstext"> condimentum rhoncus, sem quam semper libero, sit</span>
              <span class="leftstext">amet adipiscing sem neque  sed ipsum.</span><br><hr>  
@@ -174,7 +247,16 @@ tf<!DOCTYPE html>
                 1 year ago in lifestyle
                 <br><span class="leftbtext"> <b>Oh, I guess they have the blues</b></span>
            </span>
-           <br><br><img src="images/waterfall.jfif" class="leftsimg">
+           <br><br><button class="lbtn" data-toggle="modal" data-target="#secondimage">VIEW IMAGE</button>
+           <div class="modal fade" id="secondimage"role="dialog">
+              <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                        <img src="images/waterfall.jfif" class="leftsimg"> 
+                      </div>
+                    </div>
+              </div>
+           </div><br>
            <br><span class="leftstext">Etiam rhoncus. Maecenas tempus, tellus tellus eget</span>
            <span class="leftstext"> condimentum rhoncus, sem quam semper libero, sit</span>
            <span class="leftstext">amet adipiscing sem neque  sed ipsum.</span><br><br><hr>
@@ -182,7 +264,17 @@ tf<!DOCTYPE html>
             1 year ago in work
             <br><span class="leftbtext"> <b>How can we sing about ourselv?</b></span>
        </span>   
-           <br><br><img src="images/viewfromtent.jfif" class="lefttimg">
+           <br><br><button class="lbtn" data-toggle="modal" data-target="#thirdimage">VIEW IMAGE</button>
+           <div class="modal fade" id="thirdimage"role="dialog">
+              <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                        <img src="images/viewfromtent.jfif" class="lefttimg">
+                      </div>
+                    </div>
+              </div>
+           </div><br>
+          
            <br><span class="leftstext">Etiam rhoncus. Maecenas tempus, tellus tellus eget</span>
            <span class="leftstext"> condimentum rhoncus, sem quam semper libero, sit</span>
            <span class="leftstext">amet adipiscing sem neque  sed ipsum.</span><br><hr>
@@ -195,14 +287,34 @@ tf<!DOCTYPE html>
                 1 year ago in journey
                 <br><span class="centerbtext"> <b>The kind is made of paper</b></span> 
             </span>
-                <br><br><img src="images/girlonchair.jfif" class="centerfimg"> 
+                <br><br><button class="cbtn" data-toggle="modal" data-target="#fourthimage">VIEW IMAGE</button>
+                <div class="modal fade" id="fourthimage"role="dialog">
+                   <div class="modal-dialog" role="document">
+                       <div class="modal-content">
+                           <div class="modal-header">
+                            <img src="images/girlonchair.jfif" class="centerfimg">
+                           </div>
+                         </div>
+                   </div>
+                </div><br><br>
+                
                 <span class="centerstext">Etiam rhoncus. Maecenas tempus, tellus eget</span>
                 <span class="centerstext">condimentum rhoncus,sem quam semper </span>
                 <span class="centerstext"> amet adiiscing sem neque sed ipsum.</span><br><br><hr>
                 <span class="centerstext">
                     1 year ago in work
-                    <br><span class="centerbtext"> <b>Crying on the news</b></span> 
-                    <br><img src="images/manonbridge.jfif" class="centersimg"> 
+                    <br><span class="centerbtext"> <b>Crying on the news</b></span><br> 
+                    <br><button class="cbtn" data-toggle="modal" data-target="#fifthimage">VIEW IMAGE</button>
+                    <div class="modal fade" id="fifthimage"role="dialog">
+                       <div class="modal-dialog" role="document">
+                           <div class="modal-content">
+                               <div class="modal-header">
+                                <img src="images/manonbridge.jfif" class="centersimg">
+                               </div>
+                             </div>
+                       </div>
+                    </div><br><br>
+                    
                     <span class="centerstext">Etiam rhoncus. Maecenas tempus, tellus eget</span>
                     <span class="centerstext">condimentum rhoncus,sem quam semper libero </span>
                     <span class="centerstext"> amet adiiscing sem neque sed ipsum.</span><br><hr>
@@ -210,7 +322,17 @@ tf<!DOCTYPE html>
                         1 year ago in journey
                         <br><span class="centerbtext"> <b>How you can not sing about love</b></span> 
                     </span>
-                    <br><img src="images/manalone.jfif" class="centertimg"> 
+                    <br><br><button class="cbtn" data-toggle="modal" data-target="#sixthimage">VIEW IMAGE</button>
+                    <div class="modal fade" id="sixthimage"role="dialog">
+                       <div class="modal-dialog" role="document">
+                           <div class="modal-content">
+                               <div class="modal-header">
+                                <img src="images/manalone.jfif" class="centertimg"> 
+                               </div>
+                             </div>
+                       </div>
+                    </div><br><br>
+                   
                     <span class="centerstext">Etiam rhoncus. Maecenas tempus, tellus eget</span>
                     <span class="centerstext">condimentum rhoncus,sem quam semper libero </span>
                     <span class="centerstext"> amet adiiscing sem neque sed ipsum.</span><br><br><hr>
@@ -226,23 +348,37 @@ tf<!DOCTYPE html>
             <br><span class="rightstext">adipiscing sem neque ed</span>
             <br><span class="rightstext">ipsum</span><br><br><hr>
 
-            <br><br><br><span class="centerbtext"> <b>Tags</b></span>
+            <span class="centerbtext"> <b>Tags</b></span>
             <br><button style="butn">JOURNEY</button>&nbsp<button style="butn">WORK</button>&nbsp<button style="butn">LIFESTYPE</button>
-            <br><button style="butn">PHOTOGRAPHY</button>&nbsp<button style="butn">FOOD&DRINKS</button><br><br><br><br><hr>
-            <br><br><br><br.<span class="rightbtext"> <b>Popular Stories</b></span> 
+            <br><button style="butn">PHOTOGRAPHY</button>&nbsp<button style="butn">FOOD&DRINKS</button><br><hr>
+            <br><span class="rightbtext"> <b>Popular Stories</b></span><br> 
             <br><span class="rightstext"><b>The blind  man</b></span>
-            <br><img src="images/boyontrack.jfif" class="rightfimg"> 
+            <br><button class="rbtn" data-toggle="modal" data-target="#seventhimage">VIEW IMAGE</button>
+                    <div class="modal fade" id="seventhimage"role="dialog">
+                       <div class="modal-dialog" role="document">
+                           <div class="modal-content">
+                               <div class="modal-header">
+                                <img src="images/boyontrack.jfif" class="rightfimg"> 
+                               </div>
+                             </div>
+                       </div>
+                    </div>
+            
             <br><span class="rightstext">1 year ago in lifestyle</span>
             <br><br><span class="rightstext"><b>Crying on news</b></span>
-            <br><img src="images/legsonheight2.jfif" class="rightfimg">
-            <br><span class="rightstext">1 year ago in work</span><br><br><hr>
-            <br><br><span class="rightbtext"> <b>Popular Stories</b></span> 
-            <br><span class="rightstext"><b>The blind  man</b></span>
-            <br><img src="images/boyontrack.jfif" class="rightfimg"> 
-            <br><span class="rightstext">1 year ago in lifestyle</span>
-            <br><br><span class="rightstext"><b>Crying on news</b></span>
-            <br><img src="images/legsonheight2.jfif" class="rightfimg">
-            <br><span class="rightstext">1 year ago in work</span><br><br><hr>
+            <br><button class="rbtn" data-toggle="modal" data-target="#eightimage">VIEW IMAGE</button>
+            <div class="modal fade" id="eightimage"role="dialog">
+               <div class="modal-dialog" role="document">
+                   <div class="modal-content">
+                       <div class="modal-header">
+                        <img src="images/legsonheight2.jfif" class="rightfimg"> 
+                       </div>
+                     </div>
+               </div>
+            </div>
+           
+            <br><span class="rightstext">1 year ago in work</span><br><hr>
+            
          </div>
      </div>
           
@@ -254,19 +390,32 @@ tf<!DOCTYPE html>
           </div>
      </div>
             
-     <div class="rom dimg">
-          <div class="col-md-12">
-            <img src="images/boyontrack.jfif" class="bimg">
-            <img src="images/girlonchair.jfif" class="bimg">
-            <img src="images/legsonheight.png" class="bimg">
-            <img src="images/legsonheight2.jfif" class="bimg">
-            <img src="images/manalone.jfif" class="bimg">
-            <img src="images/manonbridge.jfif" class="bimg">
-            <img src="images/viewfromtent.jfif" class="bimg">
-            <img src="images/waterfall.jfif" class="bimg">
-
-          </div>
-     </div>
+    
+                    <br><br><button class="lastbtn" data-toggle="modal" data-target="#images">VIEW MORE RELATED IMAGES</button>
+                            <div class="modal fade" id="images"role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <img src="images/boyontrack.jfif" class="bfimg">
+                                            <img src="images/manalone.jfif" class="bfimg">
+                                            <img src="images/manonbridge.jfif" class="bfimg"> 
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="images/waterfall.jfif" class="bsimg">
+                                            <img src="images/legsonheight2.jfif" class="bsimg">
+                                            <img src="images/legsonheight.png" class="bsimg">
+                                            <img src="images/viewfromtent.jfif" class="bsimg">
+                                            <img src="images/waterfall.jfif" class="bsimg">
+                                            <img src="images/legsonheight.png" class="bsimg">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <img src="images/viewfromtent.jfif" class="btimg">
+                                            <img src="images/girlonchair.jfif" class="btimg">
+                                            <img src="images/waterfall.jfif" class="btimg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><br><br><br>
 
 
                   
