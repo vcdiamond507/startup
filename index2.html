@@ -12,6 +12,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <title>Document</title>
     
+    
     <style>
         .top
         {
@@ -95,7 +96,7 @@
         {
             margin-top: 20px;
         }
-        .cardf{padding-top: 15px;padding-left: 10px;  box-shadow:  0 0 10px 0 rgba(141, 139, 139, 0.904);}
+        .cardf{padding-top: 15px;padding-left: 10px;box-shadow:  0 0 10px 0 rgba(141, 139, 139, 0.904);}
         .cards{padding-top: 15px;padding-left: 10px;box-shadow:  0 0 10px 0 rgba(141, 139, 139, 0.904); background-image: linear-gradient(90deg,#406bf7,#212ffa);}
         .cardt{padding-top: 15px;padding-left: 10px;box-shadow:  0 0 10px 0 rgba(141, 139, 139, 0.904); }
         .little
@@ -103,10 +104,73 @@
             float: right;!important
            text-size-adjust: 15px; !important
         }
-       
-       
-       
-        
+        .searchbar
+        {
+            border-radius: 1rem;
+        }
+       .imgbutn
+       {
+           height: 25px;
+           width: 25px;
+           border-radius: 50%;
+          background-color: rgb(48, 143, 56);
+       }
+       .lgs
+       {
+         font-size: 15px;
+         font-style: italic;
+       }
+       .updt
+       {
+         font-size: 10px;
+       }
+       .fbtn
+       {
+        background-color: #81b4f8;
+        border: none;
+        color: rgb(9, 59, 126);
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 7px;
+        margin: 4px 2px;
+        cursor: pointer;
+       } .sbtn
+       {
+        background-color: #72f077;
+        border: none;
+        color: rgb(74, 129, 11);
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 7px;
+        margin: 4px 2px;
+        cursor: pointer;
+       }
+       .tbtn
+       {
+        background-color: #f1ac44;
+        border: none;
+        color: rgb(224, 106, 9);
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 7px;
+        margin: 4px 2px;
+        cursor: pointer;
+       }
+       .date
+       {
+           font-size: 7px;
+       }
+       .amount
+       {
+         font-size: 20px;
+       }
+       .what
+       {
+          font-size: 10px;
+       }  
     </style>
   
 </head>
@@ -141,7 +205,7 @@
           </div>
             <div class="col-md-11 cright">
                 
-                <div class="row" >
+                <div class="row"  style="margin-right: 10px;margin-left: 10px;">
                     <div class="col-md-1 cltop">
                         <span class="ana">Analytic</span>
                    </div>
@@ -151,15 +215,15 @@
                                                 border-top-left-radius: 7px;"><i class="fas fa-cog fa-1x"></i></button>
 
                     <button style="width: 20px; height: 20px; background-color: rgb(57, 54, 243); color: rgb(57, 54, 243); 
-                                                box-shadow:  0 0 3px 0 rgba(247, 242, 242, 0.904);border-radius: 10%;">+</button>
+                                                box-shadow:  0 0 3px 0 rgba(247, 242, 242, 0.904); border-radius: .25rem;">+</button>
 
                     <button style="width: 20px; height: 20px; background-color: rgb(236, 236, 245);
-                                                box-shadow:  0 0 1px 0 rgba(247, 242, 242, 0.904);border-radius: 10%;border-color: 1px solid rgb(230, 223, 223); 
+                                                box-shadow:  0 0 1px 0 rgba(247, 242, 242, 0.904);border-radius: .25rem; 
                                                 color:rgb(230, 223, 223);">+</button>
                    </div>
                 </div>
 
-                   <div class="row centerSBox">
+                   <div class="row centerSBox" style="margin-right: 10px;">
                         <div class="col-md-5">
                              <div class="card cardf">
                                  <span style="font-style: oblique; font-size: 20px;"> Statics</span><br>
@@ -170,39 +234,205 @@
                                       </div>
                                       <div class="col-md-6" style="padding-left: 30px;">
                                         <span class="total"  style="font-size: 15px;"> Paid Visits</span><br>
-                                        <span class="total" style="font-size: 27px;color:  rgb(243, 72, 129);">4,256</span>
+                                        <span class="total" style="font-size: 27px;color:  rgb(243, 72, 129);"></span>
                                     </div>
                                   </div><br>
                              </div>
                         </div>
-                        <div class="col-md-3">
+                         <div class="col-md-3">
                             <div class="card  cards">
                                 <div style="margin-right: 10px; margin-left: 10px; color: white;">
                                     <span>Pro Plan</span><span style="float: right; font-size: 10px;">$10.344</span><br><br><br><br>    
                                 </div>
                                
                                    <div style="display: inline-block; margin-left: 10px; margin-right: 10px;">
-                                         <button style="width: 30px; background-color: Transparent; color: white;border: 1px solid rgb(231, 227, 227);  box-shadow:  0 0 3px 0 rgba(247, 242, 242, 0.904); border-radius: 10%">+</button>
-                                         <button style="width: 30px; background-color: Transparent; color: white;border: 1px solid  rgb(231, 227, 227);  box-shadow:  0 0 3px 0 rgba(247, 242, 242, 0.904);border-radius: 10%" ><i class="far fa-credit-card fa-1x"></i></button>
-                                         <button style="width: 80px; background-color: Transparent;  color: white; border: 1px solid rgb(231, 227, 227);float: right; box-shadow:  0 0 3px 0 rgba(247, 242, 242, 0.904);border-radius: 10%">Upgrage</button>
+                                         <button style="width: 30px; background-color: Transparent; color: white;border: 1px solid rgb(231, 227, 227);  box-shadow:  0 0 3px 0 rgba(247, 242, 242, 0.904); border-radius: .25rem">+</button>
+                                         <button style="width: 30px; background-color: Transparent; color: white;border: 1px solid  rgb(231, 227, 227);  box-shadow:  0 0 3px 0 rgba(247, 242, 242, 0.904);border-radius: .25rem" ><i class="far fa-credit-card fa-1x"></i></button>
+                                         <button style="width: 80px; background-color: Transparent;  color: white; border: 1px solid rgb(231, 227, 227);float: right; box-shadow:  0 0 3px 0 rgba(247, 242, 242, 0.904);border-radius: .25rem">Upgrage</button>
                                     </div><br>
                             </div>
                             
-                        </div><div class="col-md-4">
+                         </div>
+                         <div class="col-md-4">
                             <div class="card cardt">
-                               <div class="card" style="border: 1px solid white;">
-                                <span style="font-size: 20px;"><b>$45,141</b></span>
-                                <span style="color: purple;">Expences</span>
-                            </div><br><br>
+                               <div class="row">
+                                   <div class="col-md-6">
+                                    <span style="font-size: 20px;"><b>$45,141</b></span><br>
+                                    <span style="color: purple;">Expences</span>
+                                   </div>
+                                   <div class="col-md-6" style="text-align: right;">
+                                    <i class="fas fa-home fa-2x"></i>
+                                   </div>
+                               </div>
+                               
+                            <br><br>
                             <div class="card" style="border: 1px solid white; padding-left: 10px padding-right: 20px;">
                             <div class="w3-light-grey w3-round-xlarge" style=" height:13px;margin-right: 20px; margin-left: 20px;">
                                 <div class="w3-container w3-round-xlarge" style="width:70%; height:10px;background-image: linear-gradient(90deg,#ff8a00,#e52e71);">&nbsp</div>
                               </div>
                             </div><br>
                         </div>
+                       
+
                    </div>
+
+                       
                 
             </div>
+            <div class="row" style="margin-right: 10px;margin-top: 20px;">
+                <div class="col-md-9">
+                    <div class="card" style="box-shadow:  0 0 10px 0 rgba(141, 139, 139, 0.904);">
+                        <span style="margin-left: 20px; margin-top: 10px;"><b>Unique Visitors</b></span>
+                        <img src="images/chart.svg" style="height: 290px;">
+                    </div>
+                </div>
+                <div class="col-md-3">
+
+                   <div class="card" style="box-shadow:  0 0 10px 0 rgba(141, 139, 139, 0.904); background-color: rgb(250, 247, 243);">
+                       <div class="card-header">
+                        <span style="font-size: 15px;"><b>Notifications</b></span>
+                       </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-2" style="text-align: right;">
+                                   <div class="row" style="padding-left: 20px;padding-top: 5px;">
+                                    <i class="fas fa-check-circle fa-2x"></i><br>
+                                   </div>
+                                   <div class="row"style="padding-left: 20px;padding-top:15px">
+                                    <i class="fas fa-envelope-square fa-2x"></i><br>
+                                   </div>
+                                   <div class="row"style="padding-left: 20px;padding-top:15px">
+                                    <i class="fas fa-check-circle fa-2x"></i><br>
+                                   </div>
+                                   <div class="row"style="padding-left: 25px;padding-top:15px">
+                                    <i class="far fa-file fa-2x"></i>
+                                   </div>
+                            </div>
+                            <div class="col-md-7">
+                                  <div class="row" style="padding-left: 15px;">
+                                    <span class="lgs"><b>Logs</b></span>
+                                  </div>
+                                  <div class="row"style="padding-left: 15px;">
+                                    <span class="updt">Updated Server Logs</span>
+                                  </div>
+                                  <div class="row"style="padding-left: 15px;">
+                                    <button class="fbtn">Logs</button>
+                                    <button class="sbtn">cpanel</button>
+                                    <button class="tbtn">Updates</button>
+                                  </div>
+
+                                <div class="row"style="padding-left: 15px; padding-top:10px">
+                                    <span class="lgs"><b>Mail</b></span>
+                                </div>
+                                <div class="row"style="padding-left: 15px;">
+                                    <span class="updt">send mail to HR and admin</span>
+                                </div>
+                                <div class="row"style="padding-left: 15px;">
+                                    <button class="fbtn">Admin</button>
+                                    <button class="sbtn">HR</button>
+                                    <button class="tbtn">Mail</button>
+                                </div>
+
+                                 <div class="row"style="padding-left: 15px;padding-top:10px">
+                                    <span class="lgs"><b>Task Compleated</b></span>
+                                 </div>
+                                 <div class="row"style="padding-left: 15px;">
+                                    <span class="updt">Backup Files EOD</span>
+                                 </div>
+                                 <div class="row"style="padding-left: 15px;">
+                                    <button class="fbtn">Backup</button>
+                                    <button class="sbtn">EOD</button>
+                                 </div>
+
+                                 <div class="row"style="padding-left: 15px;padding-top:10px">
+                                    <span class="lgs"><b>Collect Docs</b></span>    
+                                 </div> 
+                                 <div class="row"style="padding-left: 15px;">
+                                    <span class="updt">Collected Documents From Sara</span>
+                                 </div>                              
+                            </div>
+                                <div class="col-md-3">
+                                    <div class="row"style="padding-left: 15px;padding-top:10px">
+                                        <span class="date"><b>27 Feb 2019</b></span>    
+                                     </div> <br><br>
+                                     <div class="row"style="padding-left: 15px;padding-top:10px">
+                                        <span class="date"><b>27 Feb 2019</b></span>    
+                                     </div> <br><br>
+                                     <div class="row"style="padding-left: 15px;padding-top:10px">
+                                        <span class="date"><b>27 Feb 2019</b></span>    
+                                     </div> <br><br>
+                                     <div class="row"style="padding-left: 15px;padding-top:10px">
+                                        <span class="date"><b>27 Feb 2019</b></span>    
+                                     </div> 
+                                </div>
+                            </div>
+                       </div>
+                       
+                   </div>
+
+                </div>
+          </div>
+          <div class="row" style="margin-top: 20px;">
+            <div class="col-md-4">
+              <div class="card" style="padding-top: 10px; padding-left: 20px;box-shadow:  0 0 10px 0 rgba(141, 139, 139, 0.904)">
+                  <b>Visitors by Browser</b>
+                 <div class="row">
+                     <div class="col-md-2">
+                        <div class="row" style="margin-top: 5px;margin-left: 30px;">
+                            <i class="fab fa-chrome fa-1x"></i>
+                           </div>
+                           <div class="row"style="margin-top: 20px;margin-left: 30px;">
+                            <i class="fas fa-compass fa-1x"></i>
+                           </div>
+                     </div>
+                     <div class="col-md-10" >
+                         <div class="row">
+                             Chrome
+                         </div>
+                         <div  class="row">
+                            <div class="w3-light-grey w3-round-xlarge" style=" height:13px;margin-right: 20px; margin-left: 20px;">
+                                <div class="w3-container w3-round-xlarge" style="width:250px; height:10px;background-image: linear-gradient(90deg,#6f7df7,#1d0fe2);">&nbsp</div>
+                              </div>
+                         </div><div class="row">
+                            Safari
+                        </div>
+                        <div  class="row">
+                           <div class="w3-light-grey w3-round-xlarge" style=" height:13px;margin-right: 20px; margin-left: 20px;">
+                               <div class="w3-container w3-round-xlarge" style="width:250px; height:10px;background-image: linear-gradient(90deg,#6f7df7,#1d0fe2);">&nbsp</div>
+                             </div><br>
+                        </div>
+                         
+                     </div>
+                 </div>
+           </div>
+            </div>
+           <div class="col-md-8">
+            <div class="row" style="margin-right: 10px;"> 
+                <div class="col-md-4" >
+                    <div class="card"style="padding-top: 10px; padding-left: 20px;box-shadow:  0 0 10px 0 rgba(141, 139, 139, 0.904);background-color: rgb(87, 128, 240);">
+                        <i class="far fa-user-circle fa-2x"></i>
+                        <span class="amount">36.6K</span>
+                        <span class="what">Followers</span><br>
+                        
+                    </div>
+                 </div>
+                 <div class="col-md-4" >
+                    <div class="card"style="padding-top: 10px; padding-left: 20px;box-shadow:  0 0 10px 0 rgba(141, 139, 139, 0.904);background-color: rgb(231, 139, 235);">
+                        <i class="fas fa-link fa-2x"></i>
+                        <span class="amount">1900</span>
+                        <span class="what">Refferal</span><br>
+                    </div>
+                 </div>
+                 <div class="col-md-4"  >
+                    <div class="card"style="padding-top: 10px; padding-left: 20px;box-shadow:  0 0 10px 0 rgba(141, 139, 139, 0.904);background-color: rgb(243, 241, 123);">
+                        <i class="far fa-comment fa-2x"></i> 
+                        <span class="amount">18.2%</span>
+                        <span class="what">Engagement</span><br>
+                    </div>
+                 </div>
+            </div>
+           </div>
+        </div>
         
        </div>
    
