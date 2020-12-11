@@ -1,4 +1,4 @@
-tf<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -392,7 +392,27 @@ tf<!DOCTYPE html>
           <div class="col-md-12 bottom">
             <br><br><br><span class="botbtext"><b><center>Subscribe to our newsletter</center></b></span>
                             <span class="botstext"><center>Join our monthly newsletter and never miss out on new stories and promotions</center></span>
-                            <center class="cen"><input type="text" placeholder="Email address" class="box"><button class="bbutton"><b>Subscribe</b></button></center> 
+                            <center class="cen"><input type="text" placeholder="Email address" class="box"><button class="bbutton" data-toggle="modal" data-target="#Subscribe"><b>Subscribe</b></button></center> 
+                            <div class="modal fade" id="Subscribe"role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"> &times </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <label> User name</label>
+                                                <input type="text" class="form-control">
+                                                <label>Password</label>
+                                                <input type="password" class="form-control">
+                                            </form>
+                                         </div>
+                                         <div class="modal-footer" >
+                                             <button type="submit">Submit</button>
+                                         </div>
+                                      </div>
+                                </div>
+                             </div>
                             <br><br><button class="lastbtn" data-toggle="modal" data-target="#images">VIEW MORE RELATED IMAGES</button>
                             <div class="modal fade " id="images"role="dialog">
                                 <div class="modal-dialog" role="document">
