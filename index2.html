@@ -14,16 +14,23 @@
     
     
     <style>
+        body
+        {
+            background-image: linear-gradient(90deg,#fc7507,#fa21fa, rgb(47, 233, 10));
+        }
         .top
         {
             box-shadow:  0 0 10px 0 rgba(0, 0, 0, 0.904);
-            
+            background-image: linear-gradient(90deg,#bbb8b8,#0a0a0a);
+           
         }
         .topleft
         {
             padding-top: 10px;
             padding-bottom: 10px;
             text-align: center;
+            box-shadow:  0 0 30px 0 rgba(0, 0, 0, 0.904);
+            background-image: linear-gradient(90deg,#080808,#b8b5b8);
         }
         .topcenter
         {
@@ -32,8 +39,11 @@
         }
         .searchbar
         {
-            width: 200px;
-            border: 1px solid black;
+            width: 300px;
+            border: 2px solid white;
+            background-color: rgb(3, 3, 3);
+            color: yellow;
+
         }
         .topright
         {
@@ -43,30 +53,53 @@
         }
         .dp
         {
-            height: 20px;
-            width: 20px;
+            height: 30px;
+            width: 30px;
             border-radius: 50%;
+            border: 2px solid white;
+            transition: 2s;
         }
+        .dp:hover
+        {
+            height: 50px;
+            width: 50px;
+            border-radius: 10%;
+            border: 2px solid rgb(243, 219, 6);
+            transition: 2s;
+            transform: rotate(360deg);
+        } 
         .sdp
         {
             height: 30px;
             width: 30px;
             border-radius: 10%;
+            border: 2px solid white;
+            transition: 2s;
         }
+        .sdp:hover
+        {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            border: 2px solid rgb(243, 219, 6);
+            transition: 2s;
+            transform: rotate(360deg);
+        } 
         .center
         {
 
         }
         .cleft
         {
-            background-color: rgb(90, 23, 214);
+            background-image: linear-gradient(180deg,#f71414,#0918f3, rgb(61, 238, 8));
+            box-shadow:  0 0 30px 0 rgba(0, 0, 0, 0.904);
              color: rgb(86, 86, 250);
             text-align: center;
             padding-top: 20px;
         }
         .icons
         {
-            color: white !important;
+            color: black !important;
         }
         .cright
         {
@@ -96,9 +129,9 @@
         {
             margin-top: 20px;
         }
-        .cardf{padding-top: 15px;padding-left: 10px;box-shadow:  0 0 10px 0 rgba(141, 139, 139, 0.904);}
-        .cards{padding-top: 15px;padding-left: 10px;box-shadow:  0 0 10px 0 rgba(141, 139, 139, 0.904); background-image: linear-gradient(90deg,#406bf7,#212ffa);}
-        .cardt{padding-top: 15px;padding-left: 10px;box-shadow:  0 0 10px 0 rgba(141, 139, 139, 0.904); }
+        .cardf{padding-top: 15px;padding-left: 10px;box-shadow:  0 0 20px 0 rgba(14, 13, 13, 0.904);}
+        .cards{padding-top: 15px;padding-left: 10px;box-shadow:  0 0 20px 0 rgba(14, 13, 13, 0.904); background-image: linear-gradient(90deg,#406bf7,#212ffa);}
+        .cardt{padding-top: 15px;padding-left: 10px;box-shadow:  0 0 20px 0 rgba(14, 13, 13, 0.904); }
         .little
         {
             float: right;!important
@@ -198,17 +231,17 @@
 <body>
     <div class="row top">
         <div class="col-md-1 topleft">
-            <i class="fab fa-500px fa-2x"></i>
+            <i class="fab fa-500px fa-2x"  style="color: rgb(68, 253, 11);"></i>
         </div>
         <div class="col-md-6 topcenter">
-            <i class="fas fa-bars"></i>&nbsp&nbsp&nbsp
+            <i class="fas fa-bars" style="color: rgb(27, 2, 253);"></i>&nbsp&nbsp&nbsp
             <input type="text"  placeholder="Search..." class="searchbar"> 
             
          </div>
         <div class="col-md-5 topright">
             <img src="images/boyontrack.jfif" class="dp">&nbsp&nbsp&nbsp&nbsp&nbsp
-            <i class="far fa-comment fa-1x"></i>&nbsp&nbsp
-            <i class="far fa-bell fa-1x"></i>&nbsp&nbsp
+            <i class="far fa-comment fa-1x" style="color: rgb(252, 248, 7);" ></i>&nbsp&nbsp
+            <i class="far fa-bell fa-1x"style="color: rgb(252, 248, 7);"></i>&nbsp&nbsp
             <img src="images/IMG_20170602_154618.jpg" class="sdp">&nbsp&nbsp
         </div>
     </div>
@@ -216,13 +249,13 @@
        <div class="row center">
           <div class="col-md-1 cleft">
            
-            <i class="fas fa-home fa-2x"></i><span class="icons">Dashboard</span><br><br><br>
-            <i class="fab fa-app-store fa-2x"></i><br><span class="icons">Apps</span><br><br><br>
-            <i class="fas fa-bolt fa-2x"></i><br><span class="icons">UI Kit</span><br><br><br>
-            <i class="fas fa-dice-d6 fa-2x"></i><br><span class="icons">Components</span><br><br><br>
-            <i class="fab fa-wpforms fa-2x"></i><br><span class="icons">Forms</span><br><br><br>
-            <i class="fas fa-table fa-2x"></i><br><span class="icons">Tables</span><br><br><br>
-            <i class="fas fa-users fa-2x"></i><br><span class="icons">Users</span><br><br><br>
+            <i class="fas fa-home fa-2x" style="color: rgb(17, 16, 16);"></i><span class="icons">Dashboard</span><br><br><br>
+            <i class="fab fa-app-store fa-2x" style="color: rgb(17, 16, 16);"></i><br><span class="icons">Apps</span><br><br><br>
+            <i class="fas fa-bolt fa-2x" style="color: rgb(17, 16, 16);"></i><br><span class="icons">UI Kit</span><br><br><br>
+            <i class="fas fa-dice-d6 fa-2x" style="color: rgb(17, 16, 16);"></i><br><span class="icons">Components</span><br><br><br>
+            <i class="fab fa-wpforms fa-2x" style="color: rgb(17, 16, 16);"></i><br><span class="icons">Forms</span><br><br><br>
+            <i class="fas fa-table fa-2x" style="color: rgb(17, 16, 16);"></i><br><span class="icons">Tables</span><br><br><br>
+            <i class="fas fa-users fa-2x" style="color: rgb(17, 16, 16);"></i><br><span class="icons">Users</span><br><br><br>
           </div>
             <div class="col-md-11 cright">
                 
@@ -255,7 +288,7 @@
                                       </div>
                                       <div class="col-md-6" style="padding-left: 30px;">
                                         <span class="total"  style="font-size: 15px;"> Paid Visits</span><br>
-                                        <span class="total" style="font-size: 27px;color:  rgb(243, 72, 129);"></span>
+                                        <span class="total" style="font-size: 27px;color:  rgb(243, 72, 129);">7929</span>
                                     </div>
                                   </div><br>
                              </div>
@@ -269,8 +302,9 @@
                                    <div style="display: inline-block; margin-left: 10px; margin-right: 10px;">
                                          <button style="width: 30px; background-color: Transparent; color: white;border: 1px solid rgb(231, 227, 227);  box-shadow:  0 0 3px 0 rgba(247, 242, 242, 0.904); border-radius: .25rem">+</button>
                                          <button style="width: 30px; background-color: Transparent; color: white;border: 1px solid  rgb(231, 227, 227);  box-shadow:  0 0 3px 0 rgba(247, 242, 242, 0.904);border-radius: .25rem" ><i class="far fa-credit-card fa-1x"></i></button>
-                                         <button style="width: 80px; background-color: Transparent;  color: white; border: 1px solid rgb(231, 227, 227);float: right; box-shadow:  0 0 3px 0 rgba(247, 242, 242, 0.904);border-radius: .25rem">Upgrage</button>
+                                         <button data-toggle="modal" data-target="#images" style=" width: 80px; background-color: Transparent;  color: white; border: 1px solid rgb(231, 227, 227);float: right; box-shadow:  0 0 3px 0 rgba(247, 242, 242, 0.904);border-radius: .25rem">Upgrage</button>
                                     </div><br>
+                                    
                             </div>
                             
                          </div>
@@ -281,8 +315,8 @@
                                     <span style="font-size: 20px;"><b>$45,141</b></span><br>
                                     <span style="color: purple;">Expences</span>
                                    </div>
-                                   <div class="col-md-6" style="text-align: right;">
-                                    <i class="fas fa-home fa-2x"></i>
+                                   <div class="col-md-6" style=" padding-left: 150px;">
+                                    <i class="fas fa-home fa-1x" style="color: rgb(131, 27, 131);border-radius: 50%; background-color: rgb(187, 182, 187);"></i>
                                    </div>
                                </div>
                                
@@ -302,14 +336,14 @@
             </div>
             <div class="row" style="margin-right: 10px;margin-top: 20px;">
                 <div class="col-md-9">
-                    <div class="card" style="box-shadow:  0 0 10px 0 rgba(141, 139, 139, 0.904);">
+                    <div class="card" style="box-shadow:  0 0 20px 0 rgba(14, 13, 13, 0.904);">
                         <span style="margin-left: 20px; margin-top: 10px;"><b>Unique Visitors</b></span>
                         <img src="images/chart.svg" style="height: 290px;">
                     </div>
                 </div>
                 <div class="col-md-3">
 
-                   <div class="card" style="box-shadow:  0 0 10px 0 rgba(141, 139, 139, 0.904); background-color: rgb(250, 247, 243);">
+                   <div class="card" style="box-shadow:  0 0 20px 0 rgba(14, 13, 13, 0.904); background-color: rgb(250, 247, 243);">
                        <div class="card-header">
                         <span style="font-size: 15px;"><b>Notifications</b></span>
                        </div>
@@ -317,19 +351,19 @@
                         <div class="row">
                             <div class="col-md-2" style="text-align: right;">
                                    <div class="row" style="padding-left: 20px;padding-top: 5px;">
-                                    <i class="fas fa-check-circle fa-2x"></i><br>
+                                    <i class="fas fa-check-circle fa-2x" style="color: rgb(40, 40, 201);"></i><br>
                                     <div class = "vertical"></div> 
                                    </div>
-                                   <div class="row"style="padding-left: 20px;padding-top:15px">
-                                    <i class="fas fa-envelope-square fa-2x"></i><br>
+                                   <div class="row"style="padding-left: 22px;padding-top:15px">
+                                    <i class="fas fa-envelope-square fa-2x" style="color: rgb(69, 153, 35);"></i><br>
                                     <div class = "verticaltw"></div>
                                    </div>
                                    <div class="row"style="padding-left: 20px;padding-top:15px">
-                                    <i class="fas fa-check-circle fa-2x"></i><br>
+                                    <i class="fas fa-check-circle fa-2x" style="color: rgb(241, 58, 241);"></i><br>
                                     <div class = "verticalth"></div>
                                    </div>
                                    <div class="row"style="padding-left: 25px;padding-top:15px">
-                                    <i class="far fa-file fa-2x"></i>
+                                    <i class="far fa-file fa-2x" style="color: rgb(235, 205, 39);"></i>
                                    </div>
                             </div>
                             <div class="col-md-7">
@@ -398,15 +432,15 @@
           </div>
           <div class="row" style="margin-top: 20px;">
             <div class="col-md-4">
-              <div class="card" style="padding-top: 10px; padding-left: 20px;box-shadow:  0 0 10px 0 rgba(141, 139, 139, 0.904)">
+              <div class="card" style="padding-top: 10px; padding-left: 20px;box-shadow:  0 0 20px 0 rgba(14, 13, 13, 0.904)">
                   <b>Visitors by Browser</b>
                  <div class="row">
                      <div class="col-md-2">
                         <div class="row" style="margin-top: 5px;margin-left: 30px;">
-                            <i class="fab fa-chrome fa-1x"></i>
+                            <i class="fab fa-chrome fa-1x" style="color: rgb(41, 53, 212);"></i>
                            </div>
                            <div class="row"style="margin-top: 20px;margin-left: 30px;">
-                            <i class="fas fa-compass fa-1x"></i>
+                            <i class="fas fa-compass fa-1x" style="color: rgb(190, 23, 196);"></i>
                            </div>
                      </div>
                      <div class="col-md-10" >
@@ -433,23 +467,23 @@
            <div class="col-md-8">
             <div class="row" style="margin-right: 10px;"> 
                 <div class="col-md-4" >
-                    <div class="card"style="padding-top: 10px; padding-left: 20px;box-shadow:  0 0 10px 0 rgba(141, 139, 139, 0.904);background-color: rgb(87, 128, 240);">
-                        <i class="far fa-user-circle fa-2x"></i>
+                    <div class="card"style="padding-top: 10px; padding-left: 20px;box-shadow:  0 0 20px 0 rgba(14, 13, 13, 0.904);background-color: rgb(87, 128, 240);">
+                        <i class="far fa-user-circle fa-2x" style="color: rgb(14, 69, 141);"></i>
                         <span class="amount">36.6K</span>
                         <span class="what">Followers</span><br>
                         
                     </div>
                  </div>
                  <div class="col-md-4" >
-                    <div class="card"style="padding-top: 10px; padding-left: 20px;box-shadow:  0 0 10px 0 rgba(141, 139, 139, 0.904);background-color: rgb(231, 139, 235);">
-                        <i class="fas fa-link fa-2x"></i>
+                    <div class="card"style="padding-top: 10px; padding-left: 20px;box-shadow:  0 0 20px 0 rgba(14, 13, 13, 0.904);background-color: rgb(231, 139, 235);">
+                        <i class="fas fa-link fa-2x" style="color: rgb(226, 17, 233);"></i>
                         <span class="amount">1900</span>
                         <span class="what">Refferal</span><br>
                     </div>
                  </div>
                  <div class="col-md-4"  >
-                    <div class="card"style="padding-top: 10px; padding-left: 20px;box-shadow:  0 0 10px 0 rgba(141, 139, 139, 0.904);background-color: rgb(243, 241, 123);">
-                        <i class="far fa-comment fa-2x"></i> 
+                    <div class="card"style="padding-top: 10px; padding-left: 20px;box-shadow:  0 0 20px 0 rgba(14, 13, 13, 0.904);background-color: rgb(243, 241, 123);">
+                        <i class="far fa-comment fa-2x" style="color: rgb(190, 164, 12);"></i> 
                         <span class="amount">18.2%</span>
                         <span class="what">Engagement</span><br>
                     </div>
@@ -457,8 +491,7 @@
             </div>
            </div>
         </div>
-        
-       </div>
+    </div><br><br><br>
    
 
 </body>
