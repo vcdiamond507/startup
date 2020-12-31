@@ -93,7 +93,7 @@
               <button class="btn btn-secondary btn-sm" onclick="setNumbers('0')">0</button>
             </div>
             <div class="col-md-3">
-              <button class="btn btn-secondary btn-sm" onclick="setNumbers('')"><br></button>
+              <button class="btn btn-secondary btn-sm" onclick="setNumbers ('=')">=</button>
             </div>
             <div class="col-md-3">
               <button class="btn btn-secondary btn-lg" onclick="operation('devide')">/</button>
@@ -110,6 +110,7 @@ crossorigin="anonymous"></script>
   <script>
       var one = '';
       var two = '';
+      var three= '';
       function setNumbers(num){
         if(one === '')
         {
