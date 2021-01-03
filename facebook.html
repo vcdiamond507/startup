@@ -1,103 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-    <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-     <!--<script src="js/bootstrap.bundle.min.js"></script>-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <title>Document</title>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <style>
-       body
-       {
-           background-color: rgb(233, 230, 230);
-       }
-     
-       .rowfirst
-       {
-           padding-left: 200px;
-           padding-top: 100px;
-
-       }
-       .images
-       {
-           width: 160px;
-           height: 160px;
-           border-top-left-radius: 0.75rem;
-           border-top-right-radius: 0.75rem;
-       }
-       .cardfirst
-       {
+    body
+    {
+        background-color: rgb(233, 230, 230);
+    }
+    .images
+    {
+        width: 160px;
+        height: 160px;
         border-top-left-radius: 0.75rem;
-           border-top-right-radius: 0.75rem; 
-           box-shadow:  0 0 5px 0 rgba(66, 65, 65, 0.904);
-       }
-       .cardsecond
-       {
-           padding-left: 10px;
-           padding-right: 10px;
-           padding-top: 10px;
-           width: 400px;
-           text-align: center;
-           box-shadow:  0 0 5px 0 rgba(100, 99, 99, 0.904);
-       }
-       .username
-       {
-           background-color: rgb(234, 232, 236);
-           height: 50px;
-       }
-       .card-footer
-       {
-           text-align: center;
-       }
-    </style>
+        border-top-right-radius: 0.75rem;
+    }
+    .cardfirst:hover
+    {
+        box-shadow:  0 0 20px 0 rgba(66, 65, 65, 0.904);
+    }
+    .cardfirst
+    {
+     border-top-left-radius: 0.75rem;
+        border-top-right-radius: 0.75rem; 
+        box-shadow:  0 0 5px 0 rgba(66, 65, 65, 0.904);
+    }
+    .cardsecond
+    {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        width: 400px;
+        text-align: center;
+        box-shadow:  0 0 5px 0 rgba(100, 99, 99, 0.904);
+    }
+    .username
+    {
+        background-color: rgb(234, 232, 236);
+        height: 50px;
+    }
+    .card-footer
+    {
+        text-align: center;
+    }
+ </style>
 <body>
-   
-     
-       
-  
-       <div class="row">
+
+<div class="container"> <div class="container">  
+     <div class="row">
              <div class="col-md-7 ">
               
-                <div class="row rowfirst" >
-                    <span style="color: rgb(17, 85, 231); font-size: 40px; font-weight: bold;"> facebook</span>
+                <div class="row rowfirst" style="padding-left: 100; padding-top: 100px;">
+                    <span style="color: rgb(17, 85, 231); font-size: 40px; font-weight: bold; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ">Facebook</span> </span>
                  </div>
-                 <div class="row" style="padding-left: 200px;">
+                 <div class="row" style="padding-left: 100; " >
                     <span style=" font-size: 30px; "> Recent Logins <br></span>
                  </div>
-                 <div class="row" style="padding-left: 200px;">
+                 <div class="row" style="padding-left: 100; " >
                     <span >  Click your picture or Add an account <br></span>
                  </div><br>
-                 <div class="row" style="padding-left: 200px;">
+                 <div class="row"  >
+                   
                      <div class="card cardfirst" >
-                             <img src="images/groot.jfif" class="images">
+                             <img src="images/cat.png" class="images" id="fid">
                          <div class="card-footer">
+                            <div class="toast tfirstid" data-autohide="false" style="position:absolute; bottom: 200px; right: 20px;">
+                                <div class="toast-header">
+                                  <img src="images/facebook-logo-2019-thumb.png" style="width: 20px;">
+                                  <span style="font-weight: bold; color: rgb(37, 117, 238);">Facebook</span>
+                                  <small style="text-muted" class="ml-5">JustNow</small>
+                                  <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+                                </div>
+                                <div class="toast-body">
+                                <span>  Your password has been changed..</span>
+                                </div>
+                              </div>
                             <span style="font-weight:500;">Vijay</span>
                          </div>
                      </div> &nbsp&nbsp&nbsp
                      <div class="card  cardfirst" >
-                        <img src="images/maxresdefault.jpg" class="images">
+                        <img src="images/maxresdefault.jpg" class="images" id="sid">
                     <div class="card-footer">
+                        <div class="toast tsecondid" data-autohide="false" style="position:absolute; bottom: 200px; right: 20px;">
+                            <div class="toast-header">
+                              <img src="images/facebook-logo-2019-thumb.png" style="width: 20px;">
+                              <span style="font-weight: bold; color: rgb(37, 117, 238);">Facebook</span>
+                              <span class="text-muted ml-5"> JustNow</span>
+                              <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+                            </div>
+                            <div class="toast-body">
+                              Seassion Expired. Login again..
+                            </div>
+                          </div>
                         <span style="font-weight:500;">Veenit Chauhan</span>
                     </div>
                 </div>&nbsp&nbsp&nbsp
                 <div class="card  cardfirst" >
-                    <img src="images/10c885f7c0c4ea05def88f6a82391d92.jpg" class="images">
+                    <img src="images/10c885f7c0c4ea05def88f6a82391d92.jpg" class="images" id="tid">
                 <div class="card-footer">
+                    <div class="toast tthirdid" data-autohide="false" style="position:absolute; bottom: 200px; right: 20px;">
+                        <div class="toast-header">
+                          <img src="images/facebook-logo-2019-thumb.png" style="width: 20px;">
+                          <span style="font-weight: bold; color: rgb(37, 117, 238);">Facebook</span>
+                          <span class="text-muted ml-5"> JustNow</span>
+                          <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+                        </div>
+                        <div class="toast-body">
+                          Already loged in another device..
+                        </div>
+                      </div>
                     <span style="font-weight:500;">Pallvi</span>
                 </div>
             </div>
             </div><br>
-            <div class="row" style="padding-left: 200px;">
+            <div class="row">
                 <div class="card  cardfirst" >
-                    <i class="fas fa-plus-circle fa-3x" style="padding-top: 50px;padding-bottom: 50px;padding-left: 58px;padding-right: 58px; color: rgb(16, 122, 209);"></i>
+                    <img src="images/groot.jfif" class="images" id="foid">
                 <div class="card-footer cards">
+                    <div class="toast tfourthid" data-autohide="false" style="position:absolute; bottom: 200px; right: 20px;">
+                        <div class="toast-header">
+                          <img src="images/facebook-logo-2019-thumb.png" style="width: 20px;">
+                          <span style="font-weight: bold; color: rgb(37, 117, 238);">Facebook</span>
+                          <small style="text-muted" class="ml-5">JustNow</small>
+                          <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+                        </div>
+                        <div class="toast-body">
+                        <span> Already 3 accounts have been loged in..</span>
+                        </div>
+                      </div>
                     <span style="font-weight:500;color: rgba(27, 82, 235, 0.979);">Add Account</span>
                 </div>
             </div>
@@ -106,17 +142,18 @@
 
 
              <div class="col-md-5">
-                  <div class="row" style="padding-top: 140px;">
+                  <div class="row" style="padding-top: 150px;" >
                     <div class="card cardsecond">
                         <form > 
                             <input class="form-control username" type="text" placeholder="User name" style=" box-shadow:  0 0 5px 0 rgba(66, 65, 65, 0.904);"><br>
                             <input class="form-control  username" type="password" placeholder="Password" style=" box-shadow:  0 0 5px 0 rgba(66, 65, 65, 0.904);"><br>
-                            <button class="form-control" style=" box-shadow:  0 0 5px 0 rgba(66, 65, 65, 0.904);background-color: rgb(40, 101, 233); color: white; height: 50px;" > Log In</button><br>
+                            <button class="form-control" type="button" id="loginbtn" style=" box-shadow:  0 0 5px 0 rgba(66, 65, 65, 0.904);background-color: rgb(40, 101, 233); color: white; height: 50px;" > Log In</button><br>
+                            
                             <span style="color: rgb(32, 81, 241);"> forget password?</span><br><hr>
-                            <button style=" box-shadow:  0 0 5px 0 rgba(66, 65, 65, 0.904); height: 40px; background-color: rgb(47, 145, 38); border: 1px solid  rgb(47, 145, 38); border-radius: 0.50rem; color: rgb(231, 227, 227);">
-                                <span style="font-size: 15px; font-weight: bold;">&nbsp&nbspCreate New Account&nbsp&nbsp</span></button><br>&nbsp
-
-                    </div>
+                            <button type="button" id="newaccountbtn" style=" box-shadow:  0 0 5px 0 rgba(66, 65, 65, 0.904); height: 40px; background-color: rgb(47, 145, 38); border: 1px solid  rgb(47, 145, 38); border-radius: 0.50rem; color: rgb(231, 227, 227);">
+                                <span style="font-size: 15px; font-weight: bold;">&nbsp&nbspCreate New Account&nbsp&nbsp</span></button><br>&nbsp           
+                               
+                            </div>
 
                   </div><br>
                   <div class="row"style="padding-left: 45px;">
@@ -124,9 +161,81 @@
                   </div>
                 </div>
        </div>
-     
-
-
+      
+  </div>
+ </div>
+ <div class="toast tlogin" data-autohide="false" style="position: absolute; bottom: 200px; right: 20px;">
+    <div class="toast-header">
+      <img src="images/facebook-logo-2019-thumb.png" style="width: 20px;">
+      <span style="font-weight: bold; color: rgb(37, 117, 238);">Facebook</span>
+      <span class="text-muted ml-5"> Just Now</span>
+      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+    </div>
+    <div class="toast-body">
+      You are not authorised to login......
+    </div>
+  </div>
+  <div class="toast tcreateaccount" data-autohide="false" style="position: absolute; bottom: 100px; right: 20px;">
+    <div class="toast-header">
+      <img src="images/facebook-logo-2019-thumb.png" style="width: 20px;">
+      <span style="font-weight: bold; color: rgb(37, 117, 238);">Facebook</span>
+      <span class="text-muted ml-5" > Just Now</span>
+      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+    </div>
+    <div class="toast-body">
+      Facebook is updating.
+    </div>
+  </div>
+  <div class="toast twlcm" data-autohide="false"style="position:absolute; top: 05px; right: 20px;">
+    <div class="toast-header">
+      <img src="images/facebook-logo-2019-thumb.png" style="width: 20px;">
+      <span style="font-weight: bold; color: rgb(37, 117, 238);">Facebook</span>
+      <span class="text-muted ml-5"> Just Now</span>
+      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+    </div>
+    <div class="toast-body">
+     Facebook Welcomes You......
+    </div>
+  </div>
+  <div class="toast twlcm" data-autohide="false"style="position:absolute; top: 100px; right: 20px;">
+    <div class="toast-header">
+      <img src="images/facebook-logo-2019-thumb.png" style="width: 20px;">
+      <span style="font-weight: bold; color: rgb(37, 117, 238);">Facebook</span>
+      <span class="text-muted ml-5"> Just Now</span>
+      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+    </div>
+    <div class="toast-body">
+     Plz Share your experience with us.....
+    </div>
+  </div>
+<script>
+$(document).ready(function(){
+   
+    $('.twlcm').toast('show');
+    $("#fid").click(function(){
+        $('.tfirstid').toast({ delay: 3000 });
+    $('.tfirstid').toast('show');
+  });
+  $("#sid").click(function(){
+    $('.tsecondid').toast('show');
+  });
+  $("#tid").click(function(){
+    $('.tthirdid').toast('show');
+  });
+  $("#newaccountbtn").click(function(){
+    $('.tcreateaccount').toast('show');
+  });
+  $("#foid").click(function(){
+    $('.tfourthid').toast('show');
+  });
+  $("#fid").click(function(){
+    $('.tfourthid').toast('show');
+  });
+  $("#loginbtn").click(function(){
+    $('.tlogin').toast('show');
+  });
+});
+</script>
 
 </body>
 </html>
