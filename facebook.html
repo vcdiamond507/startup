@@ -3,8 +3,9 @@
 <head>
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/all.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -52,10 +53,10 @@
  </style>
 <body>
 
-<div class="container"> <div class="container">  
+<div class="container" > 
      <div class="row">
+     
              <div class="col-md-7 ">
-              
                 <div class="row rowfirst" style="padding-left: 100; padding-top: 100px;">
                     <span style="color: rgb(17, 85, 231); font-size: 40px; font-weight: bold; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ">Facebook</span> </span>
                  </div>
@@ -81,7 +82,7 @@
                                 <span>  Your password has been changed..</span>
                                 </div>
                               </div>
-                            <span style="font-weight:500;">Vijay</span>
+                            <span style="font-weight:500;">Vijay<span class="badge bg-danger">4</span></span>
                          </div>
                      </div> &nbsp&nbsp&nbsp
                      <div class="card  cardfirst" >
@@ -98,7 +99,7 @@
                               Seassion Expired. Login again..
                             </div>
                           </div>
-                        <span style="font-weight:500;">Veenit Chauhan</span>
+                        <span style="font-weight:500;">Veenit Chauhan<span class="badge bg-danger">6</span></span>
                     </div>
                 </div>&nbsp&nbsp&nbsp
                 <div class="card  cardfirst" >
@@ -115,7 +116,7 @@
                           Already loged in another device..
                         </div>
                       </div>
-                    <span style="font-weight:500;">Pallvi</span>
+                    <span style="font-weight:500;">Pallvi<span class="badge bg-danger">32</span></span>
                 </div>
             </div>
             </div><br>
@@ -134,7 +135,7 @@
                         <span> Already 3 accounts have been loged in..</span>
                         </div>
                       </div>
-                    <span style="font-weight:500;color: rgba(27, 82, 235, 0.979);">Add Account</span>
+                    <span style="font-weight: bold; color: rgba(27, 82, 235, 0.979);">Add Account</span>
                 </div>
             </div>
             </div>
@@ -142,50 +143,51 @@
 
 
              <div class="col-md-5">
+                  <div class="row" style="float: right;">
+                    <div class="dropdown">
+                      <i class="fas fa-bars fa-2x " data-toggle="dropdown"> </i> 
+                      <ul class="dropdown-menu">
+                        <li class="ml-3"><a href="#">Main Menu</a></li>
+                        <li class="ml-3"><a href="#">Home</a></li>
+                        <li class="ml-3"><a href="#">Help</a></li>
+                        <li class="ml-3"><a href="#">Setting</a></li>
+                        <li class="ml-3"><a href="#">Contact</a></li>
+                        <li class="ml-3"><a href="#">Feedback</a></li>
+                      </ul>
+                    </div>
+                   
+                  </div>
                   <div class="row" style="padding-top: 150px;" >
                     <div class="card cardsecond">
                         <form > 
                             <input class="form-control username" type="text" placeholder="User name" style=" box-shadow:  0 0 5px 0 rgba(66, 65, 65, 0.904);"><br>
                             <input class="form-control  username" type="password" placeholder="Password" style=" box-shadow:  0 0 5px 0 rgba(66, 65, 65, 0.904);"><br>
-                            <button class="form-control" type="button" id="loginbtn" style=" box-shadow:  0 0 5px 0 rgba(66, 65, 65, 0.904);background-color: rgb(40, 101, 233); color: white; height: 50px;" > Log In</button><br>
-                            
+                           <a href="index2.html" target="_blank"><button class="form-control" type="button" style=" box-shadow:  0 0 5px 0 rgba(66, 65, 65, 0.904);background-color: rgb(40, 101, 233); color: white; height: 50px;" >Log In</button></a>
                             <span style="color: rgb(32, 81, 241);"> forget password?</span><br><hr>
                             <button type="button" id="newaccountbtn" style=" box-shadow:  0 0 5px 0 rgba(66, 65, 65, 0.904); height: 40px; background-color: rgb(47, 145, 38); border: 1px solid  rgb(47, 145, 38); border-radius: 0.50rem; color: rgb(231, 227, 227);">
                                 <span style="font-size: 15px; font-weight: bold;">&nbsp&nbspCreate New Account&nbsp&nbsp</span></button><br>&nbsp           
-                               
+                                <div class="toast tcreateaccount" data-autohide="false" style="position: absolute; bottom: 100px; right: 20px;">
+                                  <div class="toast-header">
+                                    <img src="images/facebook-logo-2019-thumb.png" style="width: 20px;">
+                                    <span style="font-weight: bold; color: rgb(37, 117, 238);">Facebook</span>
+                                    <span class="text-muted ml-5" > Just Now</span>
+                                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+                                  </div>
+                                  <div class="toast-body">
+                                    Facebook is updating.
+                                  </div>
+                                </div>
                             </div>
 
                   </div><br>
                   <div class="row"style="padding-left: 45px;">
-                      <strong>Create a page</strong>for a celebrity, band and business.
+                      <strong data-toggle="popover" title="Facebook Account" data-content="Anyone can create a facebook page">Create a page</strong><span  >for a celebrity, band and business.</span>
                   </div>
                 </div>
        </div>
-      
-  </div>
  </div>
- <div class="toast tlogin" data-autohide="false" style="position: absolute; bottom: 200px; right: 20px;">
-    <div class="toast-header">
-      <img src="images/facebook-logo-2019-thumb.png" style="width: 20px;">
-      <span style="font-weight: bold; color: rgb(37, 117, 238);">Facebook</span>
-      <span class="text-muted ml-5"> Just Now</span>
-      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
-    </div>
-    <div class="toast-body">
-      You are not authorised to login......
-    </div>
-  </div>
-  <div class="toast tcreateaccount" data-autohide="false" style="position: absolute; bottom: 100px; right: 20px;">
-    <div class="toast-header">
-      <img src="images/facebook-logo-2019-thumb.png" style="width: 20px;">
-      <span style="font-weight: bold; color: rgb(37, 117, 238);">Facebook</span>
-      <span class="text-muted ml-5" > Just Now</span>
-      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
-    </div>
-    <div class="toast-body">
-      Facebook is updating.
-    </div>
-  </div>
+ 
+  
   <div class="toast twlcm" data-autohide="false"style="position:absolute; top: 05px; right: 20px;">
     <div class="toast-header">
       <img src="images/facebook-logo-2019-thumb.png" style="width: 20px;">
@@ -210,7 +212,6 @@
   </div>
 <script>
 $(document).ready(function(){
-   
     $('.twlcm').toast('show');
     $("#fid").click(function(){
     $('.tfirstid').toast('show');
@@ -227,11 +228,9 @@ $(document).ready(function(){
   $("#newaccountbtn").click(function(){
     $('.tcreateaccount').toast('show');
   });
-  $("#loginbtn").click(function(){
-    $('.tlogin').toast('show');
-  });
 });
 </script>
+
 
 </body>
 </html>
