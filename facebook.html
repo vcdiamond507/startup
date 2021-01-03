@@ -50,6 +50,14 @@
     {
         text-align: center;
     }
+    .DOB
+    {
+      padding-top: 5px;
+       padding-bottom: 5px;
+       border: 1px solid rgb(186, 183, 183);
+       border-radius: 0.25rem;
+      
+    }
  </style>
 <body>
 
@@ -99,7 +107,7 @@
                               Seassion Expired. Login again..
                             </div>
                           </div>
-                        <span style="font-weight:500;">Veenit Chauhan<span class="badge bg-danger">6</span></span>
+                        <span style="font-weight:500;">Veenit<span class="badge bg-danger">6</span></span>
                     </div>
                 </div>&nbsp&nbsp&nbsp
                 <div class="card  cardfirst" >
@@ -122,9 +130,9 @@
             </div><br>
             <div class="row">
                 <div class="card  cardfirst" >
-                    <img src="images/groot.jfif" class="images" id="foid">
+                  <i class="fas fa-plus fa-3x"  id="foid" style="color: rgb(34, 149, 211); padding: 40px 58px 40px 58px;"></i> 
                 <div class="card-footer cards">
-                    <div class="toast tfourthid" data-autohide="false" style="position:absolute; bottom: 200px; right: 20px;">
+                    <div class="toast tfourthid" data-autohide="false" style="position:absolute; bottom: 180px; right: 10px;">
                         <div class="toast-header">
                           <img src="images/facebook-logo-2019-thumb.png" style="width: 20px;">
                           <span style="font-weight: bold; color: rgb(37, 117, 238);">Facebook</span>
@@ -162,57 +170,106 @@
                         <form > 
                             <input class="form-control username" type="text" placeholder="User name" style=" box-shadow:  0 0 5px 0 rgba(66, 65, 65, 0.904);"><br>
                             <input class="form-control  username" type="password" placeholder="Password" style=" box-shadow:  0 0 5px 0 rgba(66, 65, 65, 0.904);"><br>
-                           <a href="index2.html" target="_blank"><button class="form-control" type="button" style=" box-shadow:  0 0 5px 0 rgba(66, 65, 65, 0.904);background-color: rgb(40, 101, 233); color: white; height: 50px;" >Log In</button></a>
-                            <span style="color: rgb(32, 81, 241);"> forget password?</span><br><hr>
-                            <button type="button" id="newaccountbtn" style=" box-shadow:  0 0 5px 0 rgba(66, 65, 65, 0.904); height: 40px; background-color: rgb(47, 145, 38); border: 1px solid  rgb(47, 145, 38); border-radius: 0.50rem; color: rgb(231, 227, 227);">
+                           <a href="index2.html" target="_blank"><button class="form-control" type="button" style=" box-shadow:  0 0 5px 0 rgba(66, 65, 65, 0.904);background-color: rgb(40, 101, 233); color: white; height: 50px; font-weight: bold;" >Log In</button></a>
+                           <a href="ForgetPassword.html" target="_blank"> <span style="color: rgb(32, 81, 241);"> forget password?</span></a>
+                           <br><br><button class="btn btn-success" type="button" data-toggle="modal" data-target="#secondimage" style=" box-shadow:  0 0 5px 0 rgba(66, 65, 65, 0.904); height: 40px; background-color: rgb(67, 177, 57); border-radius: 0.25rem; color:white;">
                                 <span style="font-size: 15px; font-weight: bold;">&nbsp&nbspCreate New Account&nbsp&nbsp</span></button><br>&nbsp           
-                                <div class="toast tcreateaccount" data-autohide="false" style="position: absolute; bottom: 100px; right: 20px;">
-                                  <div class="toast-header">
-                                    <img src="images/facebook-logo-2019-thumb.png" style="width: 20px;">
-                                    <span style="font-weight: bold; color: rgb(37, 117, 238);">Facebook</span>
-                                    <span class="text-muted ml-5" > Just Now</span>
-                                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
-                                  </div>
-                                  <div class="toast-body">
-                                    Facebook is updating.
-                                  </div>
-                                </div>
                             </div>
 
                   </div><br>
                   <div class="row"style="padding-left: 45px;">
-                      <strong data-toggle="popover" title="Facebook Account" data-content="Anyone can create a facebook page">Create a page</strong><span  >for a celebrity, band and business.</span>
+                      <strong >Create a page</strong><span  >for a celebrity, band and business.</span>
                   </div>
                 </div>
        </div>
  </div>
- 
-  
-  <div class="toast twlcm" data-autohide="false"style="position:absolute; top: 05px; right: 20px;">
-    <div class="toast-header">
-      <img src="images/facebook-logo-2019-thumb.png" style="width: 20px;">
-      <span style="font-weight: bold; color: rgb(37, 117, 238);">Facebook</span>
-      <span class="text-muted ml-5"> Just Now</span>
-      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
-    </div>
-    <div class="toast-body">
-     Facebook Welcomes You......
-    </div>
+ <div class="modal fade" id="secondimage"role="dialog">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <span style="font-weight: bold; color:black;font-size: 40px; ">Sign up</span>
+              <button type="button" class="ml-2 close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+         <form>
+          <div class="row">
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="First Name">
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Surname">
+            </div>
+          </div><br>
+          <input type="text" class="form-control" placeholder="Mobile Number or Email Address"><br>
+          <input type="password" class="form-control" placeholder="New Password"><br>
+          <small>Date of Birth</small>
+          <div class="row">
+            <div class="col-md-4" style="text-align: center;">
+              <select class="form-select DOB" aria-label="Default select example">
+                <option selected>&nbsp&nbsp&nbsp&nbsp&nbspDate&nbsp&nbsp&nbsp&nbsp&nbsp</option>
+                <option value="1">1</option> <option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+                <option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option>
+                <option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option>
+              </select>
+            </div>
+            <div class="col-md-4"style="text-align: center;">
+              <select class="form-select DOB" aria-label="Default select example"  style="padding-top: 5px; padding-bottom: 5px;">
+                <option selected>&nbsp&nbsp&nbsp&nbsp&nbspMonth&nbsp&nbsp&nbsp&nbsp&nbsp</option>
+                <option value="Jan">Jan</option><option value="Feb">Feb</option><option value="Mar">Mar</option><option value="April">April</option><option value="May">May</option><option value="June">June</option><option value="july">July</option><option value="Aug">Aug</option><option value="Sep">Sep</option><option value="Oct">Oct</option><option value="Nov">Nov</option><option value="Dec">Dec</option>
+              </select>
+            </div>
+            <div class="col-md-4"style="text-align: center;">
+              <select class="form-select DOB" aria-label="Default select example"  style="padding-top: 5px; padding-bottom: 5px;">
+                <option selected>&nbsp&nbsp&nbsp&nbsp&nbspYear&nbsp&nbsp&nbsp&nbsp&nbsp</option>
+                <option value="2021">2021</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option></option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option>
+              </select>
+            </div>
+          </div><br>
+         <small>Gender</small>
+          <div class="row">
+            <div class="col-md-4" style="text-align: center;">
+              Male<input type="radio" class="ml-2">
+            </div>
+            <div class="col-md-4" style="text-align: center;">
+              Female<input type="radio"  class="ml-2">
+            </div>
+            <div class="col-md-4" style="text-align: center;">
+              Other<input type="radio"  class="ml-2">
+            </div>
+          </div>
+          
+         </form>
+      </div>
+      <div class="modal-footer">
+        <div class="row">
+          <div class="col-md-12" style="line-break:normal;">
+            <p style="font-size: 10px;">  By cicking Sign Up, you agree to our <span style="color: blue;">Terms, Data Policy and Cookie Policy.</span> You may receive SMS notifications from us and can opt out at any time.</p> 
+                  
+          </div>
+        </div><br>
+        <div class="row">
+          <div class="col-md-12" style="text-align: center;">
+            <button class="btn btn-success" id="signIn" data-toggle="modal" data-target="#thirdimage" style=" box-shadow:  0 0 5px 0 rgba(66, 65, 65, 0.904);"> Sign In</button>
+            <div class="toast tsignIn" data-autohide="false" style="position:absolute; bottom: 40px; right: auto;">
+              <div class="toast-header">
+                <img src="images/facebook-logo-2019-thumb.png" style="width: 20px;">
+                <span style="font-weight: bold; color: rgb(37, 117, 238);">Facebook</span>
+                <small style="text-muted" class="ml-5">JustNow</small>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+              </div>
+              <div class="toast-body">
+              <span> Account Created Successfully. Go to login Section</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
   </div>
-  <div class="toast twlcm" data-autohide="false"style="position:absolute; top: 100px; right: 20px;">
-    <div class="toast-header">
-      <img src="images/facebook-logo-2019-thumb.png" style="width: 20px;">
-      <span style="font-weight: bold; color: rgb(37, 117, 238);">Facebook</span>
-      <span class="text-muted ml-5"> Just Now</span>
-      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
-    </div>
-    <div class="toast-body">
-     Plz Share your experience with us.....
-    </div>
-  </div>
+</div>
+</div>
+
 <script>
 $(document).ready(function(){
-    $('.twlcm').toast('show');
     $("#fid").click(function(){
     $('.tfirstid').toast('show');
   });
@@ -225,8 +282,8 @@ $(document).ready(function(){
   $("#foid").click(function(){
     $('.tfourthid').toast('show');
   });
-  $("#newaccountbtn").click(function(){
-    $('.tcreateaccount').toast('show');
+  $("#signIn").click(function(){
+    $('.tsignIn').toast('show');
   });
 });
 </script>
