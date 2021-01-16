@@ -32,6 +32,12 @@
         border-top-right-radius: 0.75rem; 
         box-shadow:  0 0 5px 0 rgba(66, 65, 65, 0.904);
     }
+    .cardfirsts
+    {
+     border-top-left-radius: 0.75rem;
+        border-top-right-radius: 0.75rem; 
+        box-shadow:  0 0 5px 0 rgba(66, 65, 65, 0.904);
+    }
     .cardsecond
     {
         padding-left: 10px;
@@ -58,15 +64,44 @@
        border-radius: 0.25rem;
       
     }
+    @media only screen and (max-width: 400px) {
+  body {
+    background-color: rgb(185, 198, 202);
+    
+    
+  }
+  .cardfirst
+  {
+    width: 45%;
+    align-items: center;
+    display: none;
+    
+    
+  }
+  .cardfirsts
+  {
+    width: 45%;
+    align-items: center;
+    display: none;
+  }
+  .cardsecond
+  {
+    width: 100%;
+   
+  }
+ 
+}
  </style>
 <body>
 
 <div class="container" > 
      <div class="row">
      
-             <div class="col-md-7 ">
+             <div class="col-md-7  ">
                 <div class="row rowfirst" style="padding-left: 100; padding-top: 100px;">
-                    <span style="color: rgb(17, 85, 231); font-size: 40px; font-weight: bold; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ">Facebook</span> </span>
+                   <div class="col-md-12 ">
+                    <span class="facebook" style="color: rgb(17, 85, 231); font-size: 40px; font-weight: bold; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ">Facebook</span> </span>
+                   </div>
                  </div>
                  <div class="row" style="padding-left: 100; " >
                     <span style=" font-size: 30px; "> Recent Logins <br></span>
@@ -74,7 +109,7 @@
                  <div class="row" style="padding-left: 100; " >
                     <span >  Click your picture or Add an account <br></span>
                  </div><br>
-                 <div class="row"  >
+                 <div class="row recentaccounts"  >
                    
                      <div class="card cardfirst" >
                              <img src="images/cat.png" class="images" id="fid">
@@ -110,7 +145,7 @@
                         <span style="font-weight:500;">Veenit<span class="badge bg-danger">6</span></span>
                     </div>
                 </div>&nbsp&nbsp&nbsp
-                <div class="card  cardfirst" >
+                <div class="card  cardfirsts" >
                     <img src="images/10c885f7c0c4ea05def88f6a82391d92.jpg" class="images" id="tid">
                 <div class="card-footer">
                     <div class="toast tthirdid" data-autohide="false" style="position:absolute; bottom: 200px; right: 20px;">
@@ -127,9 +162,9 @@
                     <span style="font-weight:500;">Pallvi<span class="badge bg-danger">32</span></span>
                 </div>
             </div>
-            </div><br>
+            </div>
             <div class="row">
-                <div class="card  cardfirst" >
+                <div class="card  cardfirsts" >
                   <i class="fas fa-plus fa-3x"  id="foid" style="color: rgb(34, 149, 211); padding: 40px 58px 40px 58px;"></i> 
                 <div class="card-footer cards">
                     <div class="toast tfourthid" data-autohide="false" style="position:absolute; bottom: 180px; right: 10px;">
@@ -151,25 +186,12 @@
 
 
              <div class="col-md-5">
-                  <div class="row" style="float: right;">
-                    <div class="dropdown">
-                      <i class="fas fa-bars fa-2x " data-toggle="dropdown"> </i> 
-                      <ul class="dropdown-menu">
-                        <li class="ml-3"><a href="#">Main Menu</a></li>
-                        <li class="ml-3"><a href="#">Home</a></li>
-                        <li class="ml-3"><a href="#">Help</a></li>
-                        <li class="ml-3"><a href="#">Setting</a></li>
-                        <li class="ml-3"><a href="#">Contact</a></li>
-                        <li class="ml-3"><a href="#">Feedback</a></li>
-                      </ul>
-                    </div>
-                   
-                  </div>
+             
                   <div class="row" style="padding-top: 150px;" >
                     <div class="card cardsecond">
                         <form > 
                             <input class="form-control username" type="text" placeholder="User name" style=" box-shadow:  0 0 5px 0 rgba(66, 65, 65, 0.904);"><br>
-                            <input class="form-control  username" type="password" placeholder="Password" style=" box-shadow:  0 0 5px 0 rgba(66, 65, 65, 0.904);"><br>
+                            <input class="form-control  username" type="password"  placeholder="Password" style=" box-shadow:  0 0 5px 0 rgba(66, 65, 65, 0.904);"><br>
                            <a href="FacebookHome.html" target="_blank"><button class="form-control" type="button" style=" box-shadow:  0 0 5px 0 rgba(66, 65, 65, 0.904);background-color: rgb(40, 101, 233); color: white; height: 50px; font-weight: bold;" >Log In</button></a>
                            <a href="ForgetPassword.html"> <span style="color: rgb(32, 81, 241);"> forget password?</span></a>
                            <br><br><button class="btn btn-success" type="button" data-toggle="modal" data-target="#secondimage" style=" box-shadow:  0 0 5px 0 rgba(66, 65, 65, 0.904); height: 40px; background-color: rgb(67, 177, 57); border-radius: 0.25rem; color:white;">
