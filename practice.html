@@ -1,63 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="css/all.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</head>
-<style>
-    body
+<html>
+  <style>
+    #birthday
     {
-       background-image: url(images/minor-planets.jpg);
+      color: red;
+      background-color: green;
     }
-    .container
-    {
-        height: 200px;
-        width: 200px;
-        border: 2px solid yellow;
-        border-radius: 0.50rem;
-        background-color: red;
-    }
-   
-    .front
-    {
-        height: 100%;
-        width: 100%;
-    }
-    .back
-    {
-    
-        height: 100%;
-        width: 100%;
-    
-    }
-</style>
+  </style>
 <body>
 
-<div class="container">
-    
-         <div class="front">
-             vijay
-         </div>
-         <div class="back">
-             chauhan
-         </div>
-     
-</div>
 
+<h1>Show a Date Control</h1>
 
+<form >
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday">
+  <input type="submit">
+</form>
 
+<p><strong>Note:</strong> type="date" is not supported in Safari or Internet Explorer 11 (or earlier).</p>
 
-
-
-
-
-
-    
 </body>
 </html>

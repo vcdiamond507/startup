@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Last Project</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/all.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +9,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</head>
+</head> 
 <style>
    .secondcolmn
    {
@@ -83,6 +83,10 @@
        border: 0.01rem solid rgb(160, 153, 153);
        background: transparent;
    }
+   .viewallbtn:focus
+    {
+        outline: none;
+    }
    .firstbox
    {
        background-image: url(images/Lastproject2.jpg);
@@ -106,6 +110,10 @@
         height: 50px;
         transition: 1s;
     }
+    .btnf:focus
+    {
+        outline: none;
+    }
     .btns 
     {
         height: 50px;
@@ -116,7 +124,10 @@
        border-right: 1px solid white;
        margin-left: 55px;
        padding-right: 65px;
-      
+    }
+    .btns:focus
+    {
+        outline: none;
     }
    
     .flight
@@ -131,7 +142,7 @@
     .cardf 
     {
         background-color: rgb(236, 236, 236);
-        width: 900px;
+        width: 1000px;
         margin-left: auto;
         margin-right: auto;
         border-top: 4px solid green;
@@ -143,6 +154,10 @@
         border: 0px;
         height: 50px;
     }
+    .btnt:focus
+    {
+        outline: none;
+    }
     .destinations
     {
        color: green;
@@ -150,6 +165,34 @@
        font-weight: 500;
        font-size: 15px;
        border-bottom: 2px dotted rgb(13, 221, 13);
+    }
+    .date
+    {
+        border: 0px;
+        background-color: white;
+        width: 130px;
+        height: 10px;
+        color: transparent;
+        font-size: 12px;
+        color: green;
+    }
+    .date:focus
+    {
+        outline: none;
+        color: green;
+    }
+    .select
+    {
+        background-color: white;
+        border: transparent;
+        height: 49px;
+        width: 90px; 
+        color: green; 
+        font-weight: 500;        
+    }
+    .select:focus
+    {
+        outline: none;
     }
    
 </style>
@@ -180,16 +223,16 @@
             
 
             <div class="tab-content">
-                <div class="tab-pane fade show active" id="flight">
+                <div class="tab-pane fade show active " id="flight">
                  <div class="row">
                      <div class="col-md-12" >
                          <div class="card cardf">
                              <span style="font-size: 25px;">Where would you like to go?</span>
                             <div class="row" >
                                <div class="col-md-12" style="text-align: center; padding-top: 10px; padding-bottom: 10px;">
-                                <button class="btnt"> <span class="destinations">Destination</span><input type="text" placeholder="country,city,airport,area,landmark" style="border: 0px; font-size: 15px; width: 300px;">  </button>
-                                <button class="btnt"> <span class="destinations">Date of Departure   &nbsp &nbsp&nbsp&nbsp&nbsp<i class="far fa-calendar-check"></i></span></button>
-                                <button class="btnt"> <span class="destinations">Date of Return   &nbsp &nbsp&nbsp&nbsp&nbsp<i class="far fa-calendar-check"></i></span></button>
+                                <button class="btnt"> <span class="destinations">Destination<input type="text" placeholder="country,city,airport,area,landmark" style="border: 0px; font-size: 15px; width: 250px; height: 13px; outline: none;"> </span> </button>
+                                <button class="btnt"> <span class="destinations">Date of Departure   <input type="date" class="date"></span></button>
+                                <button class="btnt"> <span class="destinations">Date of Return   <input type="date" class="date"></span></button>
                                 <button class="btnt"> <span class="destinations">Search  &nbsp &nbsp&nbsp&nbsp&nbsp<i class="fas fa-search"></i></span></button>
                                </div>
                             </div>
@@ -199,7 +242,7 @@
                 </div>
             </div>
             <div class="tab-content">
-                <div class="tab-pane fade" id="hotel">
+                <div class="tab-pane fade " id="hotel">
                  <div class="row">
                      <div class="col-md-12" >
                          <div class="card cardf">
@@ -207,10 +250,23 @@
                             
                             <div class="row" >
                                <div class="col-md-12" style="text-align: center; padding-top: 10px; padding-bottom: 10px;">
-                                <button class="btnt"> <span class="destinations">Destination</span><input type="text" placeholder="country,city,airport,area,landmark" style="border: 0px; font-size: 15px; width: 300px;">  </button>
-                                <button class="btnt"> <span class="destinations">Check in   &nbsp &nbsp&nbsp&nbsp&nbsp<i class="far fa-calendar-check"></i></span></button>
-                                <button class="btnt"> <span class="destinations">Check out   &nbsp &nbsp&nbsp&nbsp&nbsp<i class="far fa-calendar-check"></i></span></button>
-                                <button class="btnt"> <span class="destinations">Guest &nbsp &nbsp&nbsp&nbsp&nbsp<i class="fas fa-caret-down"></i></span></button>
+                                <button class="btnt"> <span class="destinations">Destination<input type="text" placeholder="country,city,airport,area,landmark" style="border: 0px; font-size: 15px; width: 250px; height: 13px; outline: none;"> </span> </button>
+                                <button class="btnt"> <span class="destinations">Check in <input type="date" class="date"></span></button>
+                                <button class="btnt"> <span class="destinations">Check out   <input type="date" class="date"></span></button>
+                               <select class="select">
+                                   <option selected >Guest</option>
+                                   <option>Pallvi Ranjha</option>
+                                   <option>Vineet Chauhan</option>
+                                   <option>Suman Negi</option>
+                                   <option>Shubham Ghunta</option>
+                                   <option>Gulshan</option>
+                                   <option>Manish Kumar</option>
+                                   <option>Meenakshi</option>
+                                   <option>Karishma</option>
+                                   <option>Kritika Chauhan</option>
+                                   <option>Poonam Thakur</option>
+
+                               </select>
                                 <button class="btnt"> <span class="destinations">Search  &nbsp &nbsp&nbsp&nbsp&nbsp<i class="fas fa-search"></i></span></button>
                                </div>
                             </div>
@@ -361,6 +417,6 @@
     </div>
 
     
-  
+
     </body>
     </html> 
